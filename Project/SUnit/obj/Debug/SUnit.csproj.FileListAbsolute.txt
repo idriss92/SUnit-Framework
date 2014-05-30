@@ -1,0 +1,5 @@
+C:\Users\SI\Documents\Visual Studio 2012\Projects\SUnit\SUnit\bin\Debug\SUnit.dll
+C:\Users\SI\Documents\Visual Studio 2012\Projects\SUnit\SUnit\bin\Debug\SUnit.pdb
+C:\Users\SI\Documents\Visual Studio 2012\Projects\SUnit\SUnit\obj\Debug\SUnit.dll
+C:\Users\SI\Documents\Visual Studio 2012\Projects\SUnit\SUnit\obj\Debug\SUnit.pdb
+C:\Users\SI\Documents\Visual Studio 2012\Projects\SUnit\SUnit\obj\Debug\SUnit.csprojResolveAssemblyReference.cache
