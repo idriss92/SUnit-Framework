@@ -12,14 +12,22 @@ namespace SUnit//.src.SUnit.core
     {
         private string description;
 
-        //constructeur
+        /// <summary>
+        /// Construct the attribute
+        /// </summary>
+        /// <param name="description">Test describe the test </param>
         public DescriptionAttribute(string description)
         {
             this.description = description;
         }
 
-        //recupere la description du test
-        public string DescriptionAttribute { get; }
+        /// <summary>
+        /// Get test description
+        /// </summary>
+        public string Description 
+        {
+            get { return description; }
+        }
 
     }
 }

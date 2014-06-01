@@ -12,21 +12,20 @@ namespace SUnit//.src.SUnit.core
         /// Attribute which encapsulate a class test
         /// </summary>
 
-        private object[] arguments;
-        private string description;
+        //private object[] arguments;
+        //private string description;
 
 
-        public TestClassAttribute(params object[] arguments)
-        {
-            for (int i = 0; i < this.arguments.Length; i++)
-            {
-            }
-        }
+        //public TestClassAttribute(params object[] arguments)
+        //{
+        //    for (int i = 0; i < this.arguments.Length; i++)
+        //    {
+        //    }
+        //}
 
 
-        //Description
-        public string Description {get;set;}
-        //public Description{get;set;}
+        //public string Description {get;set;}
+        ////public Description{get;set;}
 
     }
 }
