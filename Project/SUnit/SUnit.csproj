@@ -41,11 +41,15 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\SUnit.assert\BooleanAsserts.cs" />
+    <Compile Include="src\SUnit.assert\EqualityAsserts.cs" />
+    <Compile Include="src\SUnit.assert\NullableAsserts.cs" />
     <Compile Include="src\SUnit.core\DescriptionAttribute.cs" />
     <Compile Include="src\SUnit.core\TestClassAttribute.cs" />
     <Compile Include="src\SUnit.core\TestAttribute.cs" />
+    <Compile Include="src\SUnit.exceptions\EqualException.cs" />
     <Compile Include="src\SUnit.exceptions\FalseException.cs" />
-    <Compile Include="src\SUnit.exceptions\SUnitException.cs" />
+    <Compile Include="src\SUnit.exceptions\NotEqualException.cs" />
+    <Compile Include="src\SUnit.exceptions\TrueException.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Samples\" />
