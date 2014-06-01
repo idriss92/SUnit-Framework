@@ -40,14 +40,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\SUnit.assert\BooleanAsserts.cs" />
     <Compile Include="src\SUnit.core\DescriptionAttribute.cs" />
     <Compile Include="src\SUnit.core\TestClassAttribute.cs" />
     <Compile Include="src\SUnit.core\TestAttribute.cs" />
+    <Compile Include="src\SUnit.exceptions\FalseException.cs" />
+    <Compile Include="src\SUnit.exceptions\SUnitException.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="samples\" />
-    <Folder Include="src\SUnit.assert\" />
-    <Folder Include="test\" />
+    <Folder Include="Samples\" />
+    <Folder Include="src\SUnit.console\" />
+    <Folder Include="Test\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
