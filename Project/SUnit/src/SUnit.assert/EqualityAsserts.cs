@@ -8,13 +8,29 @@ namespace SUnit.src.SUnit.assert
 {
     public partial class Assert
     {
-        #region AreEqual
-        public static void AreEqual();
-        public static void AreEqual();
+        #region Equal
+        public static void Equal<T>(T actual, T expected, IEqualityComparer<T> compare)
+        {
+            if (!compare.Equals(actual, expected))
+                throw new InvalidOperationException("Assert:AreEqual() Failure");
+        }
+        public static void Equal<T>(T actual, T expected)
+        {
+            Equal(actual, expected, null);
+        }
         #endregion
 
-        #region AreNotEqual
+        #region NotEqual
+        public static void NotEqual<T>(T actual, T expected, IEqualityComparer<T> compare)
+        {
+            if (compare.Equals(actual, expected))
+                throw new InvalidOperationException("Assert:AreNotEqual() Failure");
+        }
 
+        public static void NotEqual<T>(T actual, T expected)
+        {
+            NotEqual(actual, expected, null);
+        }
         #endregion
     }
 }

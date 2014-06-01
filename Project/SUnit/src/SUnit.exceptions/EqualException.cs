@@ -8,10 +8,10 @@ namespace SUnit.src.SUnit.exceptions
 {
     public class EqualException:Exception
     {
-        public EqualException(string userMessage)
-            :base(userMessage ?? "Assert.Equal() Failure")
-        {
+        //public EqualException(object expected, object actual)
+        //    :base(expected ,actual ?? "Assert.Equal() Failure")
+        //{
 
-        }
+        //}
     }
 }
