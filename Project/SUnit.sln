@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUnit", "SUnit\SUnit.csproj", "{650A6FC4-49D6-4F2E-929E-79C64CE28592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExtendedMethodAssert", "TestExtendedMethodAssert\TestExtendedMethodAssert.csproj", "{DB9B5E97-E423-40B8-A62D-30DA683C48FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,10 @@ Global
 		{650A6FC4-49D6-4F2E-929E-79C64CE28592}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{650A6FC4-49D6-4F2E-929E-79C64CE28592}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{650A6FC4-49D6-4F2E-929E-79C64CE28592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB9B5E97-E423-40B8-A62D-30DA683C48FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB9B5E97-E423-40B8-A62D-30DA683C48FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB9B5E97-E423-40B8-A62D-30DA683C48FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB9B5E97-E423-40B8-A62D-30DA683C48FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

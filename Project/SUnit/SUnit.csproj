@@ -41,19 +41,25 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\SUnit.assert\BooleanAsserts.cs" />
+    <Compile Include="src\SUnit.assert\ComparaisonAssert.cs" />
     <Compile Include="src\SUnit.assert\EqualityAsserts.cs" />
+    <Compile Include="src\SUnit.assert\InstanceAsserts.cs" />
     <Compile Include="src\SUnit.assert\NullAsserts.cs" />
     <Compile Include="src\SUnit.core\DescriptionAttribute.cs" />
     <Compile Include="src\SUnit.core\TestClassAttribute.cs" />
     <Compile Include="src\SUnit.core\TestAttribute.cs" />
+    <Compile Include="src\SUnit.exceptions\AreNotSameException.cs" />
+    <Compile Include="src\SUnit.exceptions\AreSameException.cs" />
     <Compile Include="src\SUnit.exceptions\EqualException.cs" />
     <Compile Include="src\SUnit.exceptions\FalseException.cs" />
     <Compile Include="src\SUnit.exceptions\IsNotNullException.cs" />
     <Compile Include="src\SUnit.exceptions\IsNullException.cs" />
     <Compile Include="src\SUnit.exceptions\NotEqualException.cs" />
+    <Compile Include="src\SUnit.exceptions\PrincipalException.cs" />
     <Compile Include="src\SUnit.exceptions\TrueException.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Runner\" />
     <Folder Include="Samples\" />
     <Folder Include="src\SUnit.console\" />
     <Folder Include="Test\" />

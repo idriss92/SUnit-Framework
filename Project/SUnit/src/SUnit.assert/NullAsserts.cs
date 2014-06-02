@@ -11,20 +11,26 @@ namespace SUnit.src.SUnit.assert
         #region IsNull
         public static void IsNull(object objet)
         {
+            IsNull(objet, null);
+        }
+        public static void IsNull(object objet, string userMessage)
+        {
             if (objet != null)
-                throw new InvalidOperationException("Assert.IsNull() Failure");
+                throw new InvalidOperationException(userMessage ?? "Assert.IsNull() Failure");
 
         }
-        public static void IsNull();
         #endregion
 
         #region IsNotNull
         public static void IsNotNull( object objet)
         {
-            if (objet == null)
-                throw new InvalidOperationException("Assert.IsNotNull() Failure");
+            IsNotNull(objet, null);            
         }
-        public static void IsNotNull();
+        public static void IsNotNull(object objet, string userMessage) 
+        {
+            if (objet == null)
+                throw new InvalidOperationException(userMessage ?? "Assert.IsNotNull() Failure");
+        }
         #endregion
     }
 }
