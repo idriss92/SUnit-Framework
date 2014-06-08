@@ -8,7 +8,7 @@ namespace SUnit.src.SUnit.exceptions
 {
     public class PrincipalException : Exception
     {
-        readonly string stack;
+        //readonly string stack;
         /// <summary>
         /// Default constructor
         /// </summary>
@@ -28,6 +28,9 @@ namespace SUnit.src.SUnit.exceptions
         /// <param name="message"></param>
         /// <param name="inner"></param>
         public PrincipalException(string userMessage, Exception inner) : base(userMessage, inner) { }
+
+        protected PrincipalException(System.Runtime.Serialization.SerializationInfo info,
+            System.Runtime.Serialization.StreamingContext context) { }
 
         // <summary>
         // Gets the message

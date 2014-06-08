@@ -15,7 +15,7 @@ namespace SUnit//.src.SUnit.core
         /// <summary>
         /// Construct the attribute
         /// </summary>
-        /// <param name="description">Test describe the test </param>
+        /// <param name="description">Test description </param>
         public DescriptionAttribute(string description)
         {
             this.description = description;

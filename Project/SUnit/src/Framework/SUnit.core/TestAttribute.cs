@@ -10,7 +10,7 @@ namespace SUnit//.src.SUnit.core
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
     public class TestAttribute:Attribute
     {
-        private string description;
+        //private string description;
 
         public string Description { get; set; }
     }
