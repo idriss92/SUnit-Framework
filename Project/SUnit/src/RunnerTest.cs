@@ -17,7 +17,6 @@ namespace SUnit.Runner2
         public List<TypeInfo> ListClass { get; set; }
 
 
-
         /// <summary>
         /// Load the assembly 
         /// </summary>
@@ -50,9 +49,10 @@ namespace SUnit.Runner2
         /// </summary>
         public void StoreMethod()
         {
-            var meth = new List<MethodInfo>();
-            ListClass.ForEach(m => m.GetMethods().ToList().ForEach(me => meth.Add(me)));
-            ListMethod = meth.Where(m => m.CustomAttributes.Any(me => me.AttributeType.Name.Equals("TestAttribute"))).ToList();
+            //var meth = new List<MethodInfo>();
+            //ListClass.ForEach(m => m.GetMethods().ToList().ForEach(me => meth.Add(me)));
+            //ListMethod = meth.Where(m => m.CustomAttributes.Any(me => me.AttributeType.Name.Equals("TestAttribute"))).ToList();
+
         }
 
 
@@ -72,7 +72,22 @@ namespace SUnit.Runner2
         /// </summary>
         public void RunnerRunner()
         {
+            object item;
+            
+            foreach(var cl in ListClass)
+            {
+                Console.WriteLine(cl.Name);
+                item = Activator.CreateInstance(cl);
+                
+                foreach(var m in cl.GetMethods())
+                {
+                    Console.WriteLine(m);
+                    //give acces to the metadata
+                    ParameterInfo[] parameters = m.GetParameters();
+                    m.Invoke(item,parameters);
 
+                }
+            }
         }
     }
 }
