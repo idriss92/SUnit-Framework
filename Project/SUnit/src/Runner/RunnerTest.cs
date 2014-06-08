@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
 
-namespace SUnit.Runner2
+namespace SUnit
 {
     public class RunnerTest
     {
-        private int testFound = 0;
+        public int TestFound { get; set; }
+        //private int testFound = 0;
         private int testSucces = 0;
         private int testFail = 0;
         public Assembly DLL { get; set; }
@@ -89,5 +90,11 @@ namespace SUnit.Runner2
                 }
             }
         }
+
+        //public bool Fail(MethodInfo met)
+        //{
+        //    if(met.Invoke)
+        //    return false;
+        //}
     }
 }

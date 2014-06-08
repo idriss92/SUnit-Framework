@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SUnit.src.SUnit.assert
+namespace SUnit.Framework
 {
     public partial class Assert
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SUnit.src.SUnit.assert
+namespace SUnit.Framework
 {
     public partial class Assert
     {
@@ -25,7 +25,7 @@ namespace SUnit.src.SUnit.assert
         public static void IsNotInstanceOfType(object objet, Type type, string userMessage)
         {
             if ((objet.GetType().Equals(type)))
-                throw new InvalidOperationException(userMessage ?? "Asert.IsInstanceOfType() Failure"); 
+                throw new InvalidOperationException(userMessage ?? "Assert.IsInstanceOfType() Failure"); 
         }
 
         public static void IsNotInstanceOfType(object objet, Type monType)
