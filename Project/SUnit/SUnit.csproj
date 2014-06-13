@@ -7,7 +7,7 @@
     <ProjectGuid>{650A6FC4-49D6-4F2E-929E-79C64CE28592}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SUnit</RootNamespace>
+    <RootNamespace>Run</RootNamespace>
     <AssemblyName>SUnit</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -40,30 +40,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="src\Framework\SUnit.assert\BooleanAsserts.cs" />
-    <Compile Include="src\Framework\SUnit.assert\ComparaisonAssert.cs" />
-    <Compile Include="src\Framework\SUnit.assert\EqualityAsserts.cs" />
-    <Compile Include="src\Framework\SUnit.assert\ExceptionAsserts.cs" />
-    <Compile Include="src\Framework\SUnit.assert\InstanceAsserts.cs" />
-    <Compile Include="src\Framework\SUnit.assert\NullAsserts.cs" />
-    <Compile Include="src\Framework\SUnit.core\DescriptionAttribute.cs" />
-    <Compile Include="src\Framework\SUnit.core\TestClassAttribute.cs" />
-    <Compile Include="src\Framework\SUnit.core\TestAttribute.cs" />
-    <Compile Include="src\Framework\SUnit.exceptions\AreNotSameException.cs" />
-    <Compile Include="src\Framework\SUnit.exceptions\AreSameException.cs" />
-    <Compile Include="src\Framework\SUnit.exceptions\EqualException.cs" />
-    <Compile Include="src\Framework\SUnit.exceptions\FalseException.cs" />
-    <Compile Include="src\Framework\SUnit.exceptions\IsNotNullException.cs" />
-    <Compile Include="src\Framework\SUnit.exceptions\IsNullException.cs" />
-    <Compile Include="src\Framework\SUnit.exceptions\NotEqualException.cs" />
-    <Compile Include="src\Framework\SUnit.exceptions\PrincipalException.cs" />
-    <Compile Include="src\Framework\SUnit.exceptions\TrueException.cs" />
-    <Compile Include="src\Runner\RunnerLoad.cs" />
-    <Compile Include="src\Runner\RunnerTest.cs" />
+    <Compile Include="Samples\TestTrue.cs" />
+    <Compile Include="src\Framework\Assertions\BooleanAsserts.cs" />
+    <Compile Include="src\Framework\Assertions\ComparaisonAssert.cs" />
+    <Compile Include="src\Framework\Assertions\EqualityAsserts.cs" />
+    <Compile Include="src\Framework\Assertions\ExceptionAsserts.cs" />
+    <Compile Include="src\Framework\Assertions\InstanceAsserts.cs" />
+    <Compile Include="src\Framework\Assertions\NullAsserts.cs" />
+    <Compile Include="src\Framework\Core\DescriptionAttribute.cs" />
+    <Compile Include="src\Framework\Core\TestClassAttribute.cs" />
+    <Compile Include="src\Framework\Core\TestAttribute.cs" />
+    <Compile Include="src\Framework\Exceptions\AreNotSameException.cs" />
+    <Compile Include="src\Framework\Exceptions\AreSameException.cs" />
+    <Compile Include="src\Framework\Exceptions\EqualException.cs" />
+    <Compile Include="src\Framework\Exceptions\FalseException.cs" />
+    <Compile Include="src\Framework\Exceptions\IsNotNullException.cs" />
+    <Compile Include="src\Framework\Exceptions\IsNullException.cs" />
+    <Compile Include="src\Framework\Exceptions\NotEqualException.cs" />
+    <Compile Include="src\Framework\Exceptions\PrincipalException.cs" />
+    <Compile Include="src\Framework\Exceptions\TrueException.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Runner\" />
-    <Folder Include="Samples\" />
+    <Folder Include="src\Framework\Interfaces\" />
     <Folder Include="src\SUnit.console\" />
     <Folder Include="Test\" />
   </ItemGroup>

@@ -3,4 +3,7 @@
   <PropertyGroup>
     <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>"C:\Users\SI\\Documents\GitHub\SUnit-Framework222\Project\SUnit\SUnit.Samples.dll"</StartArguments>
+  </PropertyGroup>
 </Project>

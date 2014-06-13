@@ -6,3 +6,11 @@ C:\Users\SI\Documents\GitHub\SUnit-Framework222\Project\SUnit\src\Run\bin\Debug\
 C:\Users\SI\Documents\GitHub\SUnit-Framework222\Project\SUnit\src\Run\obj\Debug\Run.csprojResolveAssemblyReference.cache
 C:\Users\SI\Documents\GitHub\SUnit-Framework222\Project\SUnit\src\Run\obj\Debug\Run.exe
 C:\Users\SI\Documents\GitHub\SUnit-Framework222\Project\SUnit\src\Run\obj\Debug\Run.pdb
+C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\src\Run\bin\Debug\Run.exe.config
+C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\src\Run\obj\Debug\Run.csprojResolveAssemblyReference.cache
+C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\src\Run\bin\Debug\Run.exe
+C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\src\Run\bin\Debug\Run.pdb
+C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\src\Run\bin\Debug\SUnit.dll
+C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\src\Run\bin\Debug\SUnit.pdb
+C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\src\Run\obj\Debug\Run.exe
+C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\src\Run\obj\Debug\Run.pdb

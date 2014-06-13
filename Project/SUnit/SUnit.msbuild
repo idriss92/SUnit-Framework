@@ -3,14 +3,31 @@
 	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 	<PropertyGroup>
 		<AssemblyName>SUnit</AssemblyName>
-		<OutputPath>bin\</OutputPath>
+		<OutputPath>Bin\</OutputPath>
 	</PropertyGroup>
-	<ItemGroup>
-		<Compile Include="Class1.cs" />
-	</ItemGroup>
-	<Target Name="HelloWorld">
-		<Message Text="Hello"></Message>
+
+  
+ 
+  
+  <ItemGroup>
+    <Compile Include="src/Libray/SUnit.assert/*.cs;src/Libray/SUnit.core/*.cs;src/Libray/SUnit.exception/*.cs" />
+  </ItemGroup>
+
+  <Target Name="Library">
+    
+  </Target>
+
+  <Target Name="Sample">
+
+  </Target>
+
+  <Target Name="Test">
+
+  </Target>
+  
+  
+	<Target Name="Build">
 		<MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
-		<Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />
+		<Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).dll" />
 	</Target>
 </Project>

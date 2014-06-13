@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SUnit.src.SUnit.exceptions
+namespace SUnit.Framework
 {
     public class EqualException:Exception
     {

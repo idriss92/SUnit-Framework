@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace SUnit//.src.SUnit.core
+namespace SUnit.Framework
 {
     /// <summary>
     /// Attribute used to provide description to a test case 

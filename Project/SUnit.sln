@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUnit", "SUnit\SUnit.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExtendedMethodAssert", "TestExtendedMethodAssert\TestExtendedMethodAssert.csproj", "{DB9B5E97-E423-40B8-A62D-30DA683C48FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Run", "SUnit\src\Run\Run.csproj", "{23274A55-AF7C-4594-B340-0DAC61A707FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUnitTestAdapter", "SUnitTestAdapter\SUnitTestAdapter.csproj", "{F78EA602-8DE1-4F01-8D1C-4A8704516B01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{DB9B5E97-E423-40B8-A62D-30DA683C48FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB9B5E97-E423-40B8-A62D-30DA683C48FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB9B5E97-E423-40B8-A62D-30DA683C48FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23274A55-AF7C-4594-B340-0DAC61A707FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23274A55-AF7C-4594-B340-0DAC61A707FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23274A55-AF7C-4594-B340-0DAC61A707FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23274A55-AF7C-4594-B340-0DAC61A707FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F78EA602-8DE1-4F01-8D1C-4A8704516B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F78EA602-8DE1-4F01-8D1C-4A8704516B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F78EA602-8DE1-4F01-8D1C-4A8704516B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F78EA602-8DE1-4F01-8D1C-4A8704516B01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SUnit//.src.SUnit.core
+namespace SUnit.Framework
 {
     /// <summary>
     /// Attribute which encapsulate a method test

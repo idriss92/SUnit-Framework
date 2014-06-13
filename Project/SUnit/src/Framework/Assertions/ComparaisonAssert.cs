@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SUnit.Framework
 {
-    public partial class Assert
+    public partial class Assert 
     {
         public static void AreSame(object expected, object actual)
         {

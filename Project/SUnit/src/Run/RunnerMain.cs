@@ -20,11 +20,16 @@ namespace Run
             //Assembly to load in the string[] args
             Run.LoadAssembly(args[0]);
             Run.Store();
+            Console.WriteLine();
             Run.StoreClassTest();
+            Console.WriteLine();
             Run.Showmany();
-            Run.RunnerRunner();
+            Console.WriteLine();
+            Run.TestRunner();
+            Console.WriteLine();
             Run.Total();
-
+            Console.WriteLine();
+            Run.PrintListResult();
             Console.ReadLine();
         }
     }

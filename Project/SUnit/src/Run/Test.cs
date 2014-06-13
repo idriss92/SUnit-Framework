@@ -1,25 +1,28 @@
-﻿using System;
+﻿using SUnit;
+using SUnit.Framework;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using System.Reflection;
-using SUnit;
-using SUnit.Framework;
 
 namespace Run
 {
-    public class Test
+    public class Test : ITest
     {
         #region Declaration Members
         public int TestFound { get; set; }
-
         public int TestSucces { get; set; }
         private int TestFail { get; set; }
+        //private List<String> ListMethodFail;// { get; set; }
+        //private List<String> ListMethodSuccess;// { get; set; }
         public Assembly DLL { get; set; }
         public List<MethodInfo> ListMethod { get; set; }
         //public List<Type> ListClass { get; set; }
-        private List<Type> ListClass;
+        //private List<Type> ListClass;
+        public List<Type> RealListClass { get; set; }
         public List<Type> TestClassList { get; set; }
         #endregion
 
@@ -44,14 +47,39 @@ namespace Run
 
         }
 
+
+        /// <summary>
+        /// Test if the path specified is a directory
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns>A boolean value</returns>
+        public bool TestPath(String path)
+        {
+            var value = Directory.Exists(path);
+            return value;
+        }
+
+
+        /// <summary>
+        /// Test if the path specified is a file
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns>A boolean value</returns>
+        public bool TestFile(String path)
+        {
+            var value = File.Exists(path);
+            return value;
+        }
+
         /// <summary>
         /// Store in a list the class and Methods which are in the assembly
         /// </summary>
         public void Store()
         {
             
-            ListClass = DLL.GetTypes().ToList();
-            
+            var ListClass = DLL.GetTypes().ToList();
+
+            RealListClass = ListClass.Where(c => c.CustomAttributes.Any(cl => cl.AttributeType.Name.Equals("TestClassAttribute"))).ToList();
             var meth = new List<MethodInfo>();
 
             foreach (var item in ListClass)
@@ -84,13 +112,13 @@ namespace Run
         /// <summary>
         /// Instanciates the class and call the method which invoke our method test
         /// </summary>
-        public void RunnerRunner()
+        public void TestRunner()
         {
             object item;
-            foreach (var i in ListMethod)
-            {
-                Console.WriteLine(i.Name," ",i.GetType());
-            }
+            //foreach (var i in ListMethod)
+            //{
+            //    Console.WriteLine(i.Name," ",i.GetType());
+            //}
             TestFound = ListMethod.Count;
             //var filtre = ListClass.Where(c => c.CustomAttributes.Any(cl => cl.AttributeType.Name.Equals("TestClassAttribute")));
             int z = 0;
@@ -98,11 +126,13 @@ namespace Run
             {
                 Console.WriteLine(cl.Name);
                 item = Activator.CreateInstance(cl);
+                //;
 
-                foreach (var m in cl.GetMethods())
+                //foreach (var m in cl.GetMethods())
+                foreach (var m in cl.GetMethods().Where(m => m.CustomAttributes.Any(me => me.AttributeType.Name.Equals("TestAttribute"))).ToList())
                 {
                     Console.WriteLine(m);
-                    TestMeth(m, item);
+                    TestMethod(m, item);
                 }
             }
         }
@@ -112,7 +142,7 @@ namespace Run
         /// </summary>
         /// <param name="m"></param>
         /// <param name="instance"></param>
-        private void TestMeth(MethodInfo m , object instance)
+        public void TestMethod(MethodInfo m , object instance)
         {
             //give acces to the metadata
             ParameterInfo[] parameters = m.GetParameters();
@@ -120,20 +150,19 @@ namespace Run
             {
                 m.Invoke(instance,parameters);
                 TestSucces += 1;
-               // Console.WriteLine(m.Name);
-                //ResultatFinal.Add(m, true);
+                //ListMethodSuccess.Add(m.Name);
             }
             catch(TargetInvocationException e)
             {
                 StringBuilder messageerror = new StringBuilder();
-                messageerror.Append("[FAil]");
+                messageerror.Append("[Failure]");
                 messageerror.Append(m.DeclaringType);
                 messageerror.Append(m.Name);
                 messageerror.Append(e.GetBaseException().TargetSite.Name);
                 messageerror.Append(e.InnerException.Message);
                 Console.WriteLine(e.Message.ToString());
                 TestFail += 1;
-                //ResultatFinal.Add(m, false);
+                //ListMethodFail.Add(m.Name);
             }
         }
 
@@ -141,14 +170,23 @@ namespace Run
         {
             if(TestSucces.Equals(TestFound))
             {
-                Console.ForegroundColor.Equals(ConsoleColor.Green);
+                Console.BackgroundColor = ConsoleColor.DarkGreen;
             }
             else
             {
-                Console.ForegroundColor.Equals(ConsoleColor.Red);
+                Console.BackgroundColor = ConsoleColor.DarkRed;
             }
 
             Console.WriteLine("Tests found {0}, {1} success, {2} failed", TestFound,TestSucces,TestFail);
+        }
+
+        public void PrintListResult()
+        {
+            //Console.WriteLine("Failure");
+            //ListMethodFail.ForEach(c => Console.WriteLine("{0}", c));
+
+            //Console.WriteLine("Success");
+            //ListMethodSuccess.ForEach(c => Console.WriteLine("{0}", c));
         }
 
         #endregion
