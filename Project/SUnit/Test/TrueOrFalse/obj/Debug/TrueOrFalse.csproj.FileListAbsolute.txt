@@ -1,8 +1,0 @@
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\TrueOrFalse\bin\Debug\TrueOrFalse.exe.config
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\TrueOrFalse\bin\Debug\TrueOrFalse.exe
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\TrueOrFalse\bin\Debug\TrueOrFalse.pdb
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\TrueOrFalse\bin\Debug\SUnit.dll
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\TrueOrFalse\bin\Debug\SUnit.pdb
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\TrueOrFalse\obj\Debug\TrueOrFalse.csprojResolveAssemblyReference.cache
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\TrueOrFalse\obj\Debug\TrueOrFalse.exe
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\TrueOrFalse\obj\Debug\TrueOrFalse.pdb

@@ -1,8 +1,0 @@
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\Compare\obj\Debug\Compare.csprojResolveAssemblyReference.cache
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\Compare\bin\Debug\Compare.exe.config
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\Compare\bin\Debug\Compare.exe
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\Compare\bin\Debug\Compare.pdb
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\Compare\bin\Debug\SUnit.dll
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\Compare\bin\Debug\SUnit.pdb
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\Compare\obj\Debug\Compare.exe
-C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Test\Compare\obj\Debug\Compare.pdb
