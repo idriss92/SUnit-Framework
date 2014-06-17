@@ -5,12 +5,12 @@ using System.Collections.Generic;
 namespace SUnit.Framework
 {
     /// <summary>
-    /// Attribute used to provide description to a test case 
+    /// Attribute used to provide description to a test class or a test method 
     /// </summary>
-    [AttributeUsage(AttributeTargets.Method| AttributeTargets.Class|AttributeTargets.Assembly, AllowMultiple = false, Inherited = false)]
+    [AttributeUsage(AttributeTargets.Method| AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
     public class DescriptionAttribute:Attribute
     {
-        private string description;
+        private string Description { get; set; }
 
         /// <summary>
         /// Construct the attribute
@@ -18,16 +18,15 @@ namespace SUnit.Framework
         /// <param name="description">Test description </param>
         public DescriptionAttribute(string description)
         {
-            this.description = description;
+            Description = description;
         }
 
         /// <summary>
-        /// Get test description
+        /// Default constructor
         /// </summary>
-        public string Description 
+        public DescriptionAttribute()
         {
-            get { return description; }
-        }
 
+        }
     }
 }
