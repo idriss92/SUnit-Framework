@@ -8,10 +8,19 @@ namespace SUnit.Framework
 {
     public class TrueException:Exception
     {
+        public bool condition;
+        public bool Condition { get; private set; }
         public TrueException(string userMessage)
-            :base(userMessage ?? "Assert.True() Failure")
+            :base(userMessage ?? " ")
         {
 
         }
+
+        public TrueException(bool condition, string userMessage)
+            :base("Expected "+ true + " instead of "+ false)
+        {
+            Condition = condition;
+        }
+
     }
 }

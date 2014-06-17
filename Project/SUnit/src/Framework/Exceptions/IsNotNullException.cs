@@ -8,8 +8,14 @@ namespace SUnit.Framework
 {
     public class IsNotNullException : Exception
     {
-        public IsNotNullException(string userMessage)
-            :base(userMessage ?? "Assert.IsNotNull() Failure")
+        public IsNotNullException (object actual,string userMessage)
+            :base(userMessage ?? " ")
+        {
+
+        }
+
+        public IsNotNullException(object actual)
+            : base(" "+actual + " is not null ")
         {
 
         }

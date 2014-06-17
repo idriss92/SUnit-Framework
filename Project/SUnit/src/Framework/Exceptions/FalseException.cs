@@ -8,10 +8,18 @@ namespace SUnit.Framework
 {
     public class FalseException: Exception
     {
+        public bool condition;
+        public bool Condition { get; private set; }
         public FalseException(string userMessage)
-            : base(userMessage ?? "Assert.False() Failure")
+            : base(userMessage ?? "")
         {
 
+        }
+
+        public FalseException(bool condition, string userMessage)
+            :base("Expected "+ false + " instead of "+ true)
+        {
+            Condition = condition;
         }
     }
 }

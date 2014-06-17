@@ -9,7 +9,7 @@ namespace SUnit.Framework
     public class AreSameException : Exception
     {
         public AreSameException (string userMessage)
-            :base(userMessage ?? "Assert.AreSame() Failure")
+            :base(userMessage ?? " ")
         {
 
         }
