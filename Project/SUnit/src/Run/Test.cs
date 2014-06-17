@@ -10,18 +10,15 @@ using System.Threading.Tasks;
 
 namespace Run
 {
-    public class Test : ITest
+    public class Test : ITest, ISummary
     {
         #region Declaration Members
         public int TestFound { get; set; }
         public int TestSucces { get; set; }
         private int TestFail { get; set; }
-        //private List<String> ListMethodFail;// { get; set; }
-        //private List<String> ListMethodSuccess;// { get; set; }
         public Assembly DLL { get; set; }
         public List<MethodInfo> ListMethod { get; set; }
-        //public List<Type> ListClass { get; set; }
-        //private List<Type> ListClass;
+ 
         public List<Type> RealListClass { get; set; }
         public List<Type> TestClassList { get; set; }
         #endregion
@@ -36,7 +33,6 @@ namespace Run
         {
             try
             {
-                //Assembly assembly = Assembly.LoadFile(path);
                 DLL = Assembly.LoadFrom(path);
             }
 
@@ -46,6 +42,7 @@ namespace Run
             }
 
         }
+
 
 
         /// <summary>
@@ -71,6 +68,8 @@ namespace Run
             return value;
         }
 
+
+
         /// <summary>
         /// Store in a list the class and Methods which are in the assembly
         /// </summary>
@@ -82,9 +81,10 @@ namespace Run
             RealListClass = ListClass.Where(c => c.CustomAttributes.Any(cl => cl.AttributeType.Name.Equals("TestClassAttribute"))).ToList();
             var meth = new List<MethodInfo>();
 
-            foreach (var item in ListClass)
+            foreach (var item in RealListClass)
             {
-                meth = item.GetMethods().ToList();
+                var recu = item.GetMethods().ToList();
+                recu.ForEach(m => meth.Add(m));
             }
             ListMethod = meth.Where(m => m.CustomAttributes.Any(me => me.AttributeType.Name.Equals("TestAttribute"))).ToList();
         }
@@ -94,7 +94,7 @@ namespace Run
         /// </summary>
         public void StoreClassTest()
         {
-            TestClassList = ListClass.Where(c => c.CustomAttributes.Any(cl => cl.AttributeType.Name.Equals("TestClassAttribute"))).ToList();
+            TestClassList = RealListClass.Where(c => c.CustomAttributes.Any(cl => cl.AttributeType.Name.Equals("TestClassAttribute"))).ToList();
         }
 
 
@@ -115,23 +115,16 @@ namespace Run
         public void TestRunner()
         {
             object item;
-            //foreach (var i in ListMethod)
-            //{
-            //    Console.WriteLine(i.Name," ",i.GetType());
-            //}
+            
             TestFound = ListMethod.Count;
-            //var filtre = ListClass.Where(c => c.CustomAttributes.Any(cl => cl.AttributeType.Name.Equals("TestClassAttribute")));
-            int z = 0;
+            
             foreach (var cl in TestClassList)
             {
-                Console.WriteLine(cl.Name);
+                //Console.WriteLine(cl.Name);
                 item = Activator.CreateInstance(cl);
-                //;
-
-                //foreach (var m in cl.GetMethods())
                 foreach (var m in cl.GetMethods().Where(m => m.CustomAttributes.Any(me => me.AttributeType.Name.Equals("TestAttribute"))).ToList())
                 {
-                    Console.WriteLine(m);
+                    //Console.WriteLine(m);
                     TestMethod(m, item);
                 }
             }
@@ -150,22 +143,37 @@ namespace Run
             {
                 m.Invoke(instance,parameters);
                 TestSucces += 1;
-                //ListMethodSuccess.Add(m.Name);
             }
             catch(TargetInvocationException e)
             {
                 StringBuilder messageerror = new StringBuilder();
-                messageerror.Append("[Failure]");
-                messageerror.Append(m.DeclaringType);
-                messageerror.Append(m.Name);
-                messageerror.Append(e.GetBaseException().TargetSite.Name);
+                messageerror.Append(m.ReflectedType.FullName);
+                messageerror.Append(m.Name+"()");
+                messageerror.Append(". ");
+                messageerror.Append(e.GetBaseException().TargetSite.Name+" verification failed ");
+                messageerror.Append(". ");
                 messageerror.Append(e.InnerException.Message);
-                Console.WriteLine(e.Message.ToString());
-                TestFail += 1;
-                //ListMethodFail.Add(m.Name);
+                
+                Console.WriteLine(messageerror);
+                Console.WriteLine();
+                TestFail += 1;         
             }
         }
 
+
+        /// <summary>
+        /// Print a failed Method
+        /// </summary>
+        /// <param name="m"></param>
+        public void PrintFailedAMethod(MethodInfo m)
+        {
+            Console.WriteLine(m.ReflectedType.FullName + "." + m.Name+"()");
+        }
+
+
+        /// <summary>
+        /// Print the summary of all the test
+        /// </summary>
         public void Total()
         {
             if(TestSucces.Equals(TestFound))
@@ -178,15 +186,6 @@ namespace Run
             }
 
             Console.WriteLine("Tests found {0}, {1} success, {2} failed", TestFound,TestSucces,TestFail);
-        }
-
-        public void PrintListResult()
-        {
-            //Console.WriteLine("Failure");
-            //ListMethodFail.ForEach(c => Console.WriteLine("{0}", c));
-
-            //Console.WriteLine("Success");
-            //ListMethodSuccess.ForEach(c => Console.WriteLine("{0}", c));
         }
 
         #endregion

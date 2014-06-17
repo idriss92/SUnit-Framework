@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\ITest.cs" />
+    <Compile Include="Interfaces\ISummary.cs" />
     <Compile Include="RunnerMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test.cs" />

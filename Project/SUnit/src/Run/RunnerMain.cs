@@ -23,13 +23,13 @@ namespace Run
             Console.WriteLine();
             Run.StoreClassTest();
             Console.WriteLine();
-            Run.Showmany();
+            ///Run.Showmany();
             Console.WriteLine();
             Run.TestRunner();
             Console.WriteLine();
             Run.Total();
             Console.WriteLine();
-            Run.PrintListResult();
+            //Run.PrintListResult();
             Console.ReadLine();
         }
     }
