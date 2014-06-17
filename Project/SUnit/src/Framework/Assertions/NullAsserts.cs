@@ -16,7 +16,7 @@ namespace SUnit.Framework
         public static void IsNull(object objet, string userMessage)
         {
             if (objet != null)
-                throw new InvalidOperationException(userMessage ?? "Assert.IsNull() Failure");
+                throw new IsNullException(userMessage ?? "Assert.IsNull() Failure");
 
         }
         #endregion
@@ -29,7 +29,7 @@ namespace SUnit.Framework
         public static void IsNotNull(object objet, string userMessage) 
         {
             if (objet == null)
-                throw new InvalidOperationException(userMessage ?? "Assert.IsNotNull() Failure");
+                throw new IsNotNullException(userMessage ?? "Assert.IsNotNull() Failure");
         }
         #endregion
     }

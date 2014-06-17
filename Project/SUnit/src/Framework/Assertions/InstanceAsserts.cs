@@ -16,7 +16,7 @@ namespace SUnit.Framework
         public static void IsInstanceOfType(object objet, Type type, string userMessage)
         {
             if (!(objet.GetType().Equals(type)))
-                throw new InvalidOperationException(userMessage ?? " Assert.IsInstanceOfType() Failure");
+                throw new IsInstanceOfException(objet,type,userMessage);
         }
         #endregion
 
@@ -25,7 +25,7 @@ namespace SUnit.Framework
         public static void IsNotInstanceOfType(object objet, Type type, string userMessage)
         {
             if ((objet.GetType().Equals(type)))
-                throw new InvalidOperationException(userMessage ?? "Assert.IsInstanceOfType() Failure"); 
+                throw new IsNotInstanceOfException(objet, type, userMessage); 
         }
 
         public static void IsNotInstanceOfType(object objet, Type monType)

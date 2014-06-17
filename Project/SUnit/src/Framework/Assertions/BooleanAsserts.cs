@@ -17,7 +17,7 @@ namespace SUnit.Framework
         public static void True(bool condition, string userMessage)
         {
             if (!condition)
-                throw new InvalidOperationException(userMessage ?? "Assert.True() Failure");
+                throw new TrueException(userMessage ?? "Assert.True() Failure");
         }
         #endregion
 
@@ -30,7 +30,7 @@ namespace SUnit.Framework
         public static void False(bool condition, string userMessage)
         {
             if (condition)
-                throw new InvalidOperationException(userMessage ?? "Assert.False() Failure");
+                throw new FalseException(condition, userMessage);
         }
         #endregion
     }

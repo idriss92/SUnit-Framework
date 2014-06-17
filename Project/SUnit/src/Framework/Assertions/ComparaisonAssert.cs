@@ -11,7 +11,7 @@ namespace SUnit.Framework
         public static void AreSame(object expected, object actual)
         {
             if (!object.ReferenceEquals(expected, actual))
-                throw new InvalidOperationException("Assert.AreSame() Failure");
+                throw new AreSameException ("Assert.AreSame() Failure");
         }
         public static void AreSame(object expected, object actual, string userMessage)
         {
@@ -22,7 +22,7 @@ namespace SUnit.Framework
         public static void AreNotSame(object expected, object actual)
         {
             if (object.ReferenceEquals(expected, actual))
-                throw new InvalidOperationException("Assert.ArenotSame() Failure");
+                throw new AreNotSameException("Assert.ArenotSame() Failure");
         }
         public static void AreNotSame(object expected, object actual, string userMessage)
         {
