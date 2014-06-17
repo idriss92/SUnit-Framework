@@ -40,7 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Samples\TestTrue.cs" />
+    <Compile Include="Samples\Equalize.cs" />
     <Compile Include="src\Framework\Assertions\BooleanAsserts.cs" />
     <Compile Include="src\Framework\Assertions\ComparaisonAssert.cs" />
     <Compile Include="src\Framework\Assertions\EqualityAsserts.cs" />
@@ -54,6 +54,8 @@
     <Compile Include="src\Framework\Exceptions\AreSameException.cs" />
     <Compile Include="src\Framework\Exceptions\EqualException.cs" />
     <Compile Include="src\Framework\Exceptions\FalseException.cs" />
+    <Compile Include="src\Framework\Exceptions\InstanceTypeException.cs" />
+    <Compile Include="src\Framework\Exceptions\IsNotInstanceOfException.cs" />
     <Compile Include="src\Framework\Exceptions\IsNotNullException.cs" />
     <Compile Include="src\Framework\Exceptions\IsNullException.cs" />
     <Compile Include="src\Framework\Exceptions\NotEqualException.cs" />
