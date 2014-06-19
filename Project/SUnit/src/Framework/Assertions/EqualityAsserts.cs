@@ -10,111 +10,61 @@ namespace SUnit.Framework
     {
         #region Equal
 
-
+        /// <summary>
+        /// Verifies that two values are equal
+        /// </summary>
+        /// <typeparam name="T">The type of the given variables</typeparam>
+        /// <param name="actual">The actual value given</param>
+        /// <param name="expected">The expected value given</param>
+        /// <exception cref="EqualException">Thrown if the values are not equal</exception>
         public static void Equal<T>(T actual, T expected)
         {
             Equal(actual, expected, null);
         }
 
+        /// <summary>
+        /// Verifies that two values are equal
+        /// </summary>
+        /// <typeparam name="T">The type of the given variables</typeparam>
+        /// <param name="actual">The actual value given</param>
+        /// <param name="expected">The expected value given</param>
+        /// <param name="userMessage">The given user message</param>
+        /// <exception cref="EqualException">Thrown if the values are not equal</exception>
         public static void Equal<T>(T actual, T expected, string userMessage)
         {
             if (!actual.Equals(expected))
                 throw new EqualException(actual, expected, userMessage);
         }
 
-        //public static void Equal(double actual, double expected, int exactitude)
-        //{
-        //    Equal(actual, expected, null);
-        //}
-
-        //public static void Equal(double actual, double expected, int exactitude, string userMessage)
-        //{
-        //    var actualValue = Math.Round(actual, exactitude);
-        //    var expectedValue = Math.Round(expected, exactitude);
-        //    if(!Equals(actualValue,expected))
-        //        throw new EqualException(userMessage ?? "Assert.Equal() Failure ");
-        //}
-
-        //public static void Equal(decimal actual, decimal expected, int exactitude)
-        //{
-        //    Equal(actual, expected, null);
-        //}
-
-        //public static void Equal(decimal actual, decimal expected, int exactitude, string userMessage)
-        //{
-        //    var actualValue = Math.Round(actual, exactitude);
-        //    var expectedValue = Math.Round(expected, exactitude);
-        //    if (!Equals(actualValue, expected))
-        //        throw new EqualException(userMessage ?? " Assert.Equal() Failure ");
-        //}
-
-        //public static void Equal(float actual, float expected, int exactitude)
-        //{
-        //    Equal(actual, expected, null);
-        //}
-
-        //public static void Equal(float actual, float expected, int exactitude, string userMessage)
-        //{
-        //    var actualValue = Math.Round(actual, exactitude);
-        //    var expectedValue = Math.Round(expected, exactitude);
-        //    if (!Equals(actualValue, expected))
-        //        throw new EqualException(userMessage ?? " Assert.Equal() Failure ");
-        //}
-
-
-
         #endregion
 
         #region NotEqual
+
+        /// <summary>
+        /// Verifies that two values are not equal
+        /// </summary>
+        /// <typeparam name="T">The type of the given variables</typeparam>
+        /// <param name="actual">The actual value given</param>
+        /// <param name="expected">The expected value given</param>
+        /// <exception cref="EqualException">Thrown if the values are not equal</exception>
         public static void NotEqual<T>(T actual, T expected)
         {
             NotEqual(actual, expected, null);
         }
 
+        /// <summary>
+        /// Verifies that two values are not equal
+        /// </summary>
+        /// <typeparam name="T">The type of the given variables</typeparam>
+        /// <param name="actual">The actual value given</param>
+        /// <param name="expected">The expected value given</param>
+        /// <param name="userMessage">The given user message</param>
+        /// <exception cref="NotEqualException">Thrown if the values are equal</exception>
         public static void NotEqual<T>(T actual, T expected, string userMessage)
         {
             if (actual.Equals(expected))
                 throw new NotEqualException(actual,expected,userMessage);
         }
-        //public static void NotEqual(double actual, double expected, int exactitude)
-        //{
-        //    NotEqual(actual, expected, null);
-        //}
-
-        //public static void NotEqual(double actual, double expected, int exactitude, string userMessage)
-        //{
-        //    var actualValue = Math.Round(actual, exactitude);
-        //    var expectedValue = Math.Round(expected, exactitude);
-        //    if (Equals(actualValue, expected))
-        //        throw new InvalidOperationException(userMessage ?? "Assert.NotEqual() Failure");
-        //}
-
-        //public static void NotEqual(decimal actual, decimal expected, int exactitude)
-        //{
-        //    NotEqual(actual, expected, null);
-        //}
-
-        //public static void NotEqual(decimal actual, decimal expected, int exactitude, string userMessage)
-        //{
-        //    var actualValue = Math.Round(actual, exactitude);
-        //    var expectedValue = Math.Round(expected, exactitude);
-        //    if (Equals(actualValue, expected))
-        //        throw new InvalidOperationException(userMessage ?? "Assert.NotEqual() Failure");
-        //}
-
-        //public static void NotEqual(float actual, float expected, int exactitude)
-        //{
-        //    Equal(actual, expected, null);
-        //}
-
-        //public static void NotEqual(float actual, float expected, int exactitude, string userMessage)
-        //{
-        //    var actualValue = Math.Round(actual, exactitude);
-        //    var expectedValue = Math.Round(expected, exactitude);
-        //    if (Equals(actualValue, expected))
-        //        throw new InvalidOperationException(userMessage ?? "Assert.NotEqual() Failure");
-        //}
-
 
         #endregion
     }

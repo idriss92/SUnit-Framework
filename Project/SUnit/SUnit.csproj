@@ -54,7 +54,7 @@
     <Compile Include="src\Framework\Exceptions\AreSameException.cs" />
     <Compile Include="src\Framework\Exceptions\EqualException.cs" />
     <Compile Include="src\Framework\Exceptions\FalseException.cs" />
-    <Compile Include="src\Framework\Exceptions\InstanceTypeException.cs" />
+    <Compile Include="src\Framework\Exceptions\InstanceTypeOfException.cs" />
     <Compile Include="src\Framework\Exceptions\IsNotInstanceOfException.cs" />
     <Compile Include="src\Framework\Exceptions\IsNotNullException.cs" />
     <Compile Include="src\Framework\Exceptions\IsNullException.cs" />

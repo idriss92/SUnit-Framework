@@ -8,25 +8,52 @@ namespace SUnit.Framework
 {
     public partial class Assert 
     {
-        public static void AreSame(object expected, object actual)
+        /// <summary>
+        /// Verifies that two objects referenced the same object
+        /// </summary>
+        /// <param name="actual">The actual object given</param>
+        /// <param name="expected">The expected object given</param>
+        /// <exception cref="AreSameException">Thrown when the test fail</exception>
+        public static void AreSame(object actual, object expected)
         {
-            if (!object.ReferenceEquals(expected, actual))
-                throw new AreSameException ("Assert.AreSame() Failure");
-        }
-        public static void AreSame(object expected, object actual, string userMessage)
-        {
-            AreSame(expected, actual, userMessage);
+            AreSame(actual, expected, null);
         }
 
-
-        public static void AreNotSame(object expected, object actual)
+        /// <summary>
+        /// Verfies that two objects referenced the same object
+        /// </summary>
+        /// <param name="actual">The actual object given</param>
+        /// <param name="expected">The expected object given</param>
+        /// <param name="userMessage">The User message given</param>
+        /// <exception cref="AreSameException">Thrown when the test fail</exception>
+        public static void AreSame(object actual, object expected, string userMessage)
         {
-            if (object.ReferenceEquals(expected, actual))
-                throw new AreNotSameException("Assert.ArenotSame() Failure");
+            if (!object.ReferenceEquals(actual, expected))
+                throw new AreSameException(actual, expected,userMessage);
         }
-        public static void AreNotSame(object expected, object actual, string userMessage)
+
+        /// <summary>
+        /// Verfies that two objects doesn't referenced the same object
+        /// </summary>
+        /// <param name="actual">The actual object given</param>
+        /// <param name="expected">The expected object given</param>
+        /// <exception cref="AreNotSameException">Thrown when the test fail</exception>
+        public static void AreNotSame(object actual, object expected)
         {
-            AreNotSame(expected, actual, userMessage);
+            AreNotSame(actual, expected, null);
+        }
+
+        /// <summary>
+        /// Verfies that two objects doesn't referenced the same object
+        /// </summary>
+        /// <param name="actual">The actual object given</param>
+        /// <param name="expected">The expected object given</param>
+        /// <param name="userMessage">The User message given</param>
+        /// <exception cref="AreSameException">Thrown when the test fail</exception>
+        public static void AreNotSame(object actual, object expected, string userMessage)
+        {
+            if (object.ReferenceEquals(actual, expected))
+                throw new AreNotSameException(actual, expected, userMessage);
         }
     }
 }
