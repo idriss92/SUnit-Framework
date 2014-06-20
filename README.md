@@ -87,15 +87,14 @@ For simple user your have to fork the project :
 4. Add in reference the SUnit.Framework.dll in your project
 5. Then Go to the content of SUnit directory and double click on build_user. Should print something like :
 6. 
-	* <a><img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Worked.PNG title="SUnit.net" /></a>
+	* <a><img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Worked.PNG" title="SUnit.net" /></a>
  	
 	
-	* Add in reference The SUnit.Framework.dll in your file.
-	* Then Go to the content of SUnit directory and double click on build_user
+7. Add in reference The SUnit.Framework.dll in your file.
+8. Then Go to the content of SUnit directory and double click on build_user
 
 
-For more information you can watch the documentation:
-* it explain the tool
-* it explain how to use your tool and write tests
-
+####For more information you can watch the documentation:
+* It Show all contained assert methods
+* <a><src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Documentation/SUnit.XML" title="SUnit.net" /></a>
 
