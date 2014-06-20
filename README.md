@@ -78,12 +78,10 @@ We have a building script:
 
 For simple user your have to fork the project : 
 1. For the repository
-2. Create a Class Library project for your Unit test in Sample Directory . Ex('https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Nouveau%20projet.PNG')
-3. 
- 	*  <a><img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Nouveau%20projet.PNG" title="SUnit.net"</a>
- 	
+2. Create a Class Library project for your Unit test in Sample Directory. https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Nouveau%20projet.PNG
+
 3. Then Then Create your `TestClass` : Exemple
- 	* <a><img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/TestClass.PNG" title="SUnit.net" /></a>
+https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/TestClass.PNG
 
 4. Add in reference the SUnit.Framework.dll in your project
 5. Then Go to the content of SUnit directory and double click on build_user. Should print something like :
@@ -97,5 +95,5 @@ For simple user your have to fork the project :
 
 ####For more information you can watch the documentation:
 * It Show all contained assert methods
-* <a><src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Documentation/SUnit.XML" title="SUnit.net" /></a>
+* <a><src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Documentation/SUnit.XML" title="SUnit.net" name="Documentation" /></a>
 
