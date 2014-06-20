@@ -78,7 +78,8 @@ We have a building script:
 
 For simple user your have to fork the project : 
 1. For the repository
-2. Create a Class Library project for your Unit test in Sample Directory
+2. Create a Class Library project for your Unit test in Sample Directory . Ex('img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Nouveau%20projet.PNG')
+3. 
  	*  <a><img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Nouveau%20projet.PNG" title="SUnit.net"</a>
  	
 3. Then Then Create your `TestClass` : Exemple
