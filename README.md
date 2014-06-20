@@ -62,7 +62,7 @@ We try to work in **TDD** (Test Driven Developpement) mode and test at least the
 
 The target was to do modern C# programming, so, we try to apply as possible clean and modern C# (solid,lambdas,anonymous,etc...). 
 
-## End word
+
 
 
 ## How does it works ?
@@ -81,12 +81,12 @@ For simple user your have to fork the project :
 2. Create a Class Library project for your Unit test in Sample Directory
  	*  <a><img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Nouveau%20projet.PNG" title="SUnit.net"</a>
  	
-2. Then Then Create your `TestClass` : Exemple
+3. Then Then Create your `TestClass` : Exemple
  	* <a><img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/TestClass.PNG" title="SUnit.net" /></a>
 
-3. Add in reference the SUnit.Framework.dll in your project
-4. Then Go to the content of SUnit directory and double click on build_user. Should print something like :
-5. 
+4. Add in reference the SUnit.Framework.dll in your project
+5. Then Go to the content of SUnit directory and double click on build_user. Should print something like :
+6. 
 	* <a><img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Worked.PNG title="SUnit.net" /></a>
  	
 	
