@@ -94,6 +94,4 @@ https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/TestClass.
 
 
 ####For more information you can watch the documentation:
-* It Show all contained assert methods
-* <a><src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Documentation/SUnit.XML" title="SUnit.net" name="Documentation" /></a>
-
+* It Show all contained assert methods https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Documentation/SUnit.XML
