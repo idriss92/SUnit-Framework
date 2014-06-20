@@ -13,3 +13,7 @@ C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\bin\Debug\SUnit.pdb
 C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\obj\Debug\SUnit.csprojResolveAssemblyReference.cache
 C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\obj\Debug\SUnit.dll
 C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\obj\Debug\SUnit.pdb
+C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Documentation\SUnit.dll
+C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Documentation\SUnit.pdb
+C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\Documentation\SUnit.XML
+C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\bin\Debug\SUnit.XML

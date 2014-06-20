@@ -14,3 +14,4 @@ C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\src\Run\bin\Debug\SUn
 C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\src\Run\bin\Debug\SUnit.pdb
 C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\src\Run\obj\Debug\Run.exe
 C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\src\Run\obj\Debug\Run.pdb
+C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\src\Run\bin\Debug\SUnit.xml

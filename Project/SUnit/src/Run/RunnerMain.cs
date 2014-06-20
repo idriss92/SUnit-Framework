@@ -15,15 +15,14 @@ namespace Run
             var Run = new Test();
 
             //Load the librairy
-           // Run.LoadAssembly("C:\\Users\\SI\\Documents\\GitHub\\SUnit-Framework222\\Project\\SUnit\\SUnit.Samples.dll");
+            //Run.LoadAssembly(@"C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\SUnit.Samples.dll");
             
             //Assembly to load in the string[] args
             Run.LoadAssembly(args[0]);
             Run.Store();
             Console.WriteLine();
             Run.StoreClassTest();
-            Console.WriteLine();
-            ///Run.Showmany();
+
             Console.WriteLine();
             Run.TestRunner();
             Console.WriteLine();

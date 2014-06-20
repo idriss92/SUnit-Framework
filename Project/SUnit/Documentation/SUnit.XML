@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SUnit</name>
+    </assembly>
+    <members>
+        <member name="M:SUnit.Framework.Assert.True(System.Boolean)">
+            <summary>
+            verifies that an condition is <code>true</code>
+            </summary>
+            <param name="condition">The given condtion</param>
+            <exception cref="T:SUnit.Framework.TrueException">Thrown if the condition is <code>false</code></exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.True(System.Boolean,System.String)">
+            <summary>
+            Verifies that a condition is <code>true</code>
+            </summary>
+            <param name="condition">The given condition</param>
+            <param name="userMessage">The given user message</param>
+            <exception cref="T:SUnit.Framework.TrueException">Thrown if the condition is <code>false</code></exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.False(System.Boolean)">
+            <summary>
+            Verifies that a condition is <code>false</code>
+            </summary>
+            <param name="condition">The given condition</param>
+            <exception cref="T:SUnit.Framework.FalseException">Thrown if the condition is <code>true</code></exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.False(System.Boolean,System.String)">
+            <summary>
+            Verifies that a condition is <code>false</code>
+            </summary>
+            <param name="condition">The given condition</param>
+            <param name="userMessage">The given user message</param>
+            <exception cref="T:SUnit.Framework.FalseException">Thrown if the condition is <code>true</code></exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.AreSame(System.Object,System.Object)">
+            <summary>
+            Verifies that two objects referenced the same object
+            </summary>
+            <param name="actual">The actual object given</param>
+            <param name="expected">The expected object given</param>
+            <exception cref="T:SUnit.Framework.AreSameException">Thrown when the test fail</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.AreSame(System.Object,System.Object,System.String)">
+            <summary>
+            Verfies that two objects referenced the same object
+            </summary>
+            <param name="actual">The actual object given</param>
+            <param name="expected">The expected object given</param>
+            <param name="userMessage">The User message given</param>
+            <exception cref="T:SUnit.Framework.AreSameException">Thrown when the test fail</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.AreNotSame(System.Object,System.Object)">
+            <summary>
+            Verfies that two objects doesn't referenced the same object
+            </summary>
+            <param name="actual">The actual object given</param>
+            <param name="expected">The expected object given</param>
+            <exception cref="T:SUnit.Framework.AreNotSameException">Thrown when the test fail</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.AreNotSame(System.Object,System.Object,System.String)">
+            <summary>
+            Verfies that two objects doesn't referenced the same object
+            </summary>
+            <param name="actual">The actual object given</param>
+            <param name="expected">The expected object given</param>
+            <param name="userMessage">The User message given</param>
+            <exception cref="T:SUnit.Framework.AreSameException">Thrown when the test fail</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.Equal``1(``0,``0)">
+            <summary>
+            Verifies that two values are equal
+            </summary>
+            <typeparam name="T">The type of the given variables</typeparam>
+            <param name="actual">The actual value given</param>
+            <param name="expected">The expected value given</param>
+            <exception cref="T:SUnit.Framework.EqualException">Thrown if the values are not equal</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.Equal``1(``0,``0,System.String)">
+            <summary>
+            Verifies that two values are equal
+            </summary>
+            <typeparam name="T">The type of the given variables</typeparam>
+            <param name="actual">The actual value given</param>
+            <param name="expected">The expected value given</param>
+            <param name="userMessage">The given user message</param>
+            <exception cref="T:SUnit.Framework.EqualException">Thrown if the values are not equal</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.NotEqual``1(``0,``0)">
+            <summary>
+            Verifies that two values are not equal
+            </summary>
+            <typeparam name="T">The type of the given variables</typeparam>
+            <param name="actual">The actual value given</param>
+            <param name="expected">The expected value given</param>
+            <exception cref="T:SUnit.Framework.EqualException">Thrown if the values are not equal</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.NotEqual``1(``0,``0,System.String)">
+            <summary>
+            Verifies that two values are not equal
+            </summary>
+            <typeparam name="T">The type of the given variables</typeparam>
+            <param name="actual">The actual value given</param>
+            <param name="expected">The expected value given</param>
+            <param name="userMessage">The given user message</param>
+            <exception cref="T:SUnit.Framework.NotEqualException">Thrown if the values are equal</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.IsInstanceOfType(System.Object,System.Type)">
+            <summary>
+            Verifies that an object is an instance of a given type
+            </summary>
+            <param name="objet">The objectgiven object</param>
+            <param name="monType">The expected given</param>
+            <exception cref="T:SUnit.Framework.IsInstanceOfException">Thrown when the test fail</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.IsInstanceOfType(System.Object,System.Type,System.String)">
+            <summary>
+            Verifies that an object is an instance of a given type
+            </summary>
+            <param name="objet">The objectgiven object</param>
+            <param name="type">The expected given</param>
+            <param name="userMessage">The User Message given</param>
+            <exception cref="T:SUnit.Framework.IsInstanceOfException">Thrown when the test fail</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.IsNotInstanceOfType(System.Object,System.Type,System.String)">
+            <summary>
+            Verifies that an object is an instance of a given type
+            </summary>
+            <param name="objet">The objectgiven object</param>
+            <param name="type">The expected given</param>
+            <param name="userMessage">The User Message given</param>
+            <exception cref="T:SUnit.Framework.IsInstanceOfException">Thrown when the test fail</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.IsNotInstanceOfType(System.Object,System.Type)">
+            <summary>
+            Verifies that an object is not an instance of a given type
+            </summary>
+            <param name="objet">The objectgiven object</param>
+            <param name="monType">The expected given</param>
+            <exception cref="T:SUnit.Framework.IsNotInstanceOfException">Thrown when the test fail</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.IsNull(System.Object)">
+            <summary>
+            Verifies that the object is null
+            </summary>
+            <param name="objet">The object to be tested</param>
+            <exception cref="T:SUnit.Framework.IsNullException">Thrown if the object is null</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.IsNull(System.Object,System.String)">
+            <summary>
+            Verifies that the object is null
+            </summary>
+            <param name="objet">The object to be tested</param>
+            <param name="userMessage">The message given when Exception is thrown</param>
+            <exception cref="T:SUnit.Framework.IsNullException">Thrown if the object is null</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.IsNotNull(System.Object)">
+            <summary>
+            Verifies that the object is null
+            </summary>
+            <param name="objet">The object to be tested</param>
+            <exception cref="T:SUnit.Framework.IsNotNullException">Thrown if the object is null</exception>
+        </member>
+        <member name="M:SUnit.Framework.Assert.IsNotNull(System.Object,System.String)">
+            <summary>
+            Verifies that the object is null
+            </summary>
+            <param name="objet">The object to be tested</param>
+            <param name="userMessage">The message given when Exception is thrown</param>
+            <exception cref="T:SUnit.Framework.IsNotNullException">Thrown if the object is null</exception>
+        </member>
+        <member name="T:SUnit.Framework.DescriptionAttribute">
+            <summary>
+            Attribute used to provide description to a test class or a test method 
+            </summary>
+        </member>
+        <member name="M:SUnit.Framework.DescriptionAttribute.#ctor(System.String)">
+            <summary>
+            Construct the attribute
+            </summary>
+            <param name="description">Test description </param>
+        </member>
+        <member name="M:SUnit.Framework.DescriptionAttribute.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:SUnit.Framework.TestClassAttribute">
+            <summary>
+            Attribute which encapsulate a class test
+            </summary>
+        </member>
+        <member name="T:SUnit.Framework.TestAttribute">
+            <summary>
+            Attribute which encapsulate a method test
+            </summary>
+        </member>
+        <member name="T:SUnit.Framework.AreNotSameException">
+            <summary>
+            Exception thrown two objects references are unexpectedly the same instance
+            </summary>
+        </member>
+        <member name="M:SUnit.Framework.AreNotSameException.#ctor(System.Object,System.Object)">
+            <summary>
+            Creates a new instance of the <see cref="T:SUnit.Framework.AreNotSameException"/>
+            </summary>
+            <param name="actual">The actual object reference</param>
+            <param name="expected">The expected object reference</param>
+        </member>
+        <member name="M:SUnit.Framework.AreNotSameException.#ctor(System.Object,System.Object,System.String)">
+            <summary>
+            Creates a new instance of the <see cref="T:SUnit.Framework.AreNotSameException"/>
+            </summary>
+            <param name="actual">The actual object references</param>
+            <param name="expected">The expected object references</param>
+            <param name="userMessage">The user message given</param>
+        </member>
+        <member name="T:SUnit.Framework.AreSameException">
+            <summary>
+            Exception thrown two objects references are not unexpectedly the same instance
+            </summary>
+        </member>
+        <member name="M:SUnit.Framework.AreSameException.#ctor(System.Object,System.Object)">
+            <summary>
+            Creates a new instance of the <see cref="T:SUnit.Framework.AreSameException"/>
+            </summary>
+            <param name="actual">The actual object reference</param>
+            <param name="expected">The expected object reference</param>
+        </member>
+        <member name="M:SUnit.Framework.AreSameException.#ctor(System.Object,System.Object,System.String)">
+            <summary>
+            Creates a new instance of the <see cref="T:SUnit.Framework.AreSameException"/>
+            </summary>
+            <param name="actual">The actual object references</param>
+            <param name="expected">The expected object references</param>
+            <param name="userMessage">The user message given</param>
+        </member>
+        <member name="T:SUnit.Framework.EqualException">
+            <summary>
+            Exception thrown two values are not unexpectedly equal
+            </summary>
+        </member>
+        <member name="M:SUnit.Framework.EqualException.#ctor(System.String)">
+            <summary>
+            Creates a new instance of <see cref="T:SUnit.Framework.EqualException"/>
+            </summary>
+            <param name="userMessage">The message given for show</param>
+        </member>
+        <member name="M:SUnit.Framework.EqualException.#ctor(System.Object,System.Object,System.String)">
+            <summary>
+            Creates a new instance of <see cref="T:SUnit.Framework.EqualException"/>
+            </summary>
+            <param name="actual">The actual string value</param>
+            <param name="expected">The expected string value</param>
+            <param name="userMessage">The given user message</param>
+        </member>
+        <member name="M:SUnit.Framework.EqualException.#ctor(System.Object,System.Object)">
+            <summary>
+            Creates a new instance of <see cref="T:SUnit.Framework.EqualException"/>
+            </summary>
+            <param name="actual"></param>
+            <param name="expected"></param>
+        </member>
+        <member name="T:SUnit.Framework.FalseException">
+            <summary>
+            Exception thrown when a condition is unexpectedly not false
+            </summary>
+        </member>
+        <member name="M:SUnit.Framework.FalseException.#ctor(System.String)">
+            <summary>
+            Creates a new instance of <see cref="T:SUnit.Framework.FalseException"/>
+            </summary>
+            <param name="userMessage"></param>
+        </member>
+        <member name="T:SUnit.Framework.IsInstanceOfException">
+            <summary>
+            Throws when the object is unexpectedly not  the type of the exact given type
+            </summary>
+        </member>
+        <member name="M:SUnit.Framework.IsInstanceOfException.#ctor(System.Object,System.Type,System.String)">
+            <summary>
+            Creates a instance of <see cref="!:InstanceTypeException"/>
+            </summary>
+            <param name="actual">The actual object reference</param>
+            <param name="expected">The expected type</param>
+            <param name="userMessage">The user message given</param>
+        </member>
+        <member name="M:SUnit.Framework.IsInstanceOfException.#ctor(System.Object,System.Type)">
+            <summary>
+            Creates a instance of <see cref="!:InstanceTypeException"/>
+            </summary>
+            <param name="actual">The actual object reference</param>
+            <param name="expected">The expected message given</param>
+        </member>
+        <member name="T:SUnit.Framework.IsNotInstanceOfException">
+            <summary>
+            Throws when the object is unexpectedly not  the type of the exact given type
+            </summary>
+        </member>
+        <member name="M:SUnit.Framework.IsNotInstanceOfException.#ctor(System.Object,System.Type,System.String)">
+            <summary>
+            Creates a instance of <see cref="!:InstanceNotTypeException"/>
+            </summary>
+            <param name="actual">The actual object reference</param>
+            <param name="expected">The epected type</param>
+            <param name="userMessage">The user message given</param>
+        </member>
+        <member name="M:SUnit.Framework.IsNotInstanceOfException.#ctor(System.Object,System.Type)">
+            <summary>
+            Creates a instance of <see cref="!:InstanceNotTypeException"/>
+            </summary>
+            <param name="actual">The actual object reference</param>
+            <param name="expected">The expected type</param>
+        </member>
+        <member name="T:SUnit.Framework.IsNotNullException">
+            <summary>
+            Exception thrown when an object reference is unexpectedly null
+            </summary>
+        </member>
+        <member name="M:SUnit.Framework.IsNotNullException.#ctor(System.Object,System.String)">
+            <summary>
+            Create a new instance of the <see cref="T:SUnit.Framework.IsNotNullException"/>
+            </summary>
+            <param name="actual"></param>
+            <param name="userMessage"></param>
+        </member>
+        <member name="M:SUnit.Framework.IsNotNullException.#ctor(System.Object)">
+            <summary>
+            Create a new instance of the <see cref="T:SUnit.Framework.IsNotNullException"/>
+            </summary>
+            <param name="actual"></param>
+        </member>
+        <member name="T:SUnit.Framework.IsNullException">
+            <summary>
+            Exception thrown when an object reference is unexpectedly not null
+            </summary>
+        </member>
+        <member name="M:SUnit.Framework.IsNullException.#ctor(System.Object,System.String)">
+            <summary>
+            Create a new instance of the <see cref="T:SUnit.Framework.IsNullException"/>
+            </summary>
+            <param name="actual"></param>
+            <param name="userMessage"></param>
+        </member>
+        <member name="M:SUnit.Framework.IsNullException.#ctor(System.Object)">
+            <summary>
+            Creates a new instance of the <see cref="T:SUnit.Framework.IsNullException"/>
+            </summary>
+            <param name="actual"></param>
+        </member>
+        <member name="T:SUnit.Framework.NotEqualException">
+            <summary>
+            Exception thrown two values are unexpectedly equal
+            </summary>
+        </member>
+        <member name="M:SUnit.Framework.NotEqualException.#ctor(System.String)">
+            <summary>
+            Creates a new instance of <see cref="T:SUnit.Framework.NotEqualException"/>
+            </summary>
+            <param name="userMessage">The message given for show</param>
+        </member>
+        <member name="M:SUnit.Framework.NotEqualException.#ctor(System.Object,System.Object,System.String)">
+            <summary>
+            Creates a new instance of <see cref="T:SUnit.Framework.NotEqualException"/>
+            </summary>
+            <param name="actual">The actual string value</param>
+            <param name="expected">The expected string value</param>
+            <param name="userMessage">The given user message</param>
+        </member>
+        <member name="M:SUnit.Framework.NotEqualException.#ctor(System.Object,System.Object)">
+            <summary>
+            Creates a new instance of <see cref="T:SUnit.Framework.NotEqualException"/>
+            </summary>
+            <param name="actual">The actual string value</param>
+            <param name="expected">The expected string value</param>
+        </member>
+        <member name="M:SUnit.Framework.PrincipalException.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:SUnit.Framework.PrincipalException.#ctor(System.String)">
+            <summary>
+            Constructor which defines the property of the message
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:SUnit.Framework.PrincipalException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor which defines the properties Message and InnerException 
+            </summary>
+            <param name="message"></param>
+            <param name="inner"></param>
+        </member>
+        <member name="T:SUnit.Framework.TrueException">
+            <summary>
+            Exception thrown when a condition is unexpectedly not true
+            </summary>
+        </member>
+        <member name="M:SUnit.Framework.TrueException.#ctor(System.String)">
+            <summary>
+            Creates a new instance of <see cref="T:SUnit.Framework.TrueException"/>
+            </summary>
+            <param name="userMessage"></param>
+        </member>
+    </members>
+</doc>

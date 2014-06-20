@@ -34,6 +34,7 @@ namespace Run
             try
             {
                 DLL = Assembly.LoadFrom(path);
+                //DLL = Assembly.LoadFile(path);
             }
 
             catch
