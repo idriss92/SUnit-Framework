@@ -56,9 +56,6 @@ If tests failed then it's able to print for each one:
 * The type of the verification(s) (ex: `IsTrue verification failed`)
 * The error message that comes with each verification (ex: `expected True instead of False`)
 
-##End word
-
-
 
 ## Process 
 We try to work in **TDD** (Test Driven Developpement) mode and test at least the things that we feel have more value!
@@ -78,7 +75,6 @@ We have a building script:
 * run your tests
 * if everything is ok, then copy executable and libraries to an artifacts folder
 
-##End word
 
 
 
