@@ -77,20 +77,20 @@ We have a building script:
 
 
 ###For simple user your have to fork the project : 
-1. For the repository
-2. Create a Class Library project for your Unit test in Sample Directory. https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Nouveau%20projet.PNG
 
-3. Then Then Create your `TestClass` : Exemple
+1. Create a Class Library project for your Unit test in Sample Directory. https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Nouveau%20projet.PNG
+
+2. Then Then Create your `TestClass` : Exemple
 https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/TestClass.PNG
 
-4. Add in reference the SUnit.Framework.dll in your project
-5. Then Go to the content of SUnit directory and double click on build_user. Should print something like :
-6. 
+3. Add in reference the SUnit.Framework.dll in your project
+4. Then Go to the content of SUnit directory and double click on build_user. Should print something like :
+5. 
 	* https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Documentation/SUnit.XML
  	
 	
-7. Add in reference The SUnit.Framework.dll in your file.
-8. Then Go to the content of SUnit directory and double click on build_user
+6. Add in reference The SUnit.Framework.dll in your file.
+7. Then Go to the content of SUnit directory and double click on build_user
 
 
 ####For more information you can watch the documentation:
