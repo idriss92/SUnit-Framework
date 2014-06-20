@@ -78,8 +78,9 @@ We have a building script:
 
 For simple user your have to fork the project : 
 1. Once your fork it : 
- 	* Create a Class Library project for your Unit test in Sample Directory 
- 	* <a href="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Nouveau%20projet.PNG" title="SUnit.net"</a>
+ 	* Create a Class Library project for your Unit test in Sample Directory <a href="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Nouveau%20projet.PNG" title="SUnit.net"</a>
+ 	
+2.
  	*Then Create your `TestClass` : Exemple
 	<a href="https://github.com/idriss92/SUnit-Framework/tree/master/Project/SUnit"><img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/TestClass.PNG" title="SUnit.net" /></a>
 	
