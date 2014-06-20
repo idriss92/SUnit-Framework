@@ -47,7 +47,7 @@ Then it prints in a nice way:
 
 	X tests found, Y success, Z failed.
 
-It's printed in green if `all`tests pass, in red if at least
+It's printed in green if `all` tests pass, in red if at least
 `one`test fails.
 
 If tests failed then it's able to print for each one:
@@ -76,6 +76,14 @@ We have a building script:
 * if everything is ok, then copy executable and libraries to an artifacts folder
 
 
+For simple user your have to fork the project : 
+1. Once your fork it : 
+ 	* Create a Class Library project for your Unit test in Sample Directory <a href="https://github.com/idriss92/SUnit-Framework/tree/master/Project/SUnit"><img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Nouveau%20projet.PNG" title="SUnit.net" /></a>
+ 	*Then Create your `TestClass` : Exemple
+	<a href="https://github.com/idriss92/SUnit-Framework/tree/master/Project/SUnit"><img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/TestClass.PNG" title="SUnit.net" /></a>
+	
+	* Add in reference The SUnit.Framework.dll in your file.
+	* Then Go to the content of SUnit directory and double click on build_user
 
 
 For more information you can watch the documentation:
