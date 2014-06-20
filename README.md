@@ -62,7 +62,7 @@ We try to work in **TDD** (Test Driven Developpement) mode and test at least the
 
 The target was to do modern C# programming, so, we try to apply as possible clean and modern C# (solid,lambdas,anonymous,etc...). 
 
-## End word
+
 
 
 ## How does it works ?
@@ -76,19 +76,22 @@ We have a building script:
 * if everything is ok, then copy executable and libraries to an artifacts folder
 
 
-For simple user your have to fork the project : 
-1. Once your fork it : 
- 	* Create a Class Library project for your Unit test in Sample Directory <a><img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Nouveau%20projet.PNG" title="SUnit.net"</a>
+###For simple user your have to fork the project : 
+
+1. Create a Class Library project for your Unit test in Sample Directory. https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Nouveau%20projet.PNG
+
+2. Then Then Create your `TestClass` : Exemple
+https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/TestClass.PNG
+
+3. Add in reference the SUnit.Framework.dll in your project
+4. Then Go to the content of SUnit directory and double click on build_user. Should print something like :
+5. 
+	* https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Documentation/SUnit.XML
  	
-2.
- 	*Then Create your `TestClass` : Exemple <a><img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/TestClass.PNG" title="SUnit.net" /></a>
 	
-	* Add in reference The SUnit.Framework.dll in your file.
-	* Then Go to the content of SUnit directory and double click on build_user
+6. Add in reference The SUnit.Framework.dll in your file.
+7. Then Go to the content of SUnit directory and double click on build_user
 
 
-For more information you can watch the documentation:
-* it explain the tool
-* it explain how to use your tool and write tests
-
-
+####For more information you can watch the documentation:
+* It Show all contained assert methods https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Documentation/SUnit.XML
