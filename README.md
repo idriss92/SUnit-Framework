@@ -87,7 +87,7 @@ For simple user your have to fork the project :
 4. Add in reference the SUnit.Framework.dll in your project
 5. Then Go to the content of SUnit directory and double click on build_user. Should print something like :
 6. 
-	* <a><img src="https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Worked.PNG" title="SUnit.net" /></a>
+	* https://github.com/idriss92/SUnit-Framework/blob/master/Project/SUnit/Documentation/SUnit.XML
  	
 	
 7. Add in reference The SUnit.Framework.dll in your file.
