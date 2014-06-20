@@ -189,6 +189,18 @@ namespace Run
             Console.WriteLine("Tests found {0}, {1} success, {2} failed", TestFound,TestSucces,TestFail);
         }
 
+
+        public void RunTheCheck(string path)
+        {
+            LoadAssembly(path);
+            Store();
+            Console.WriteLine();
+            StoreClassTest();
+            TestRunner();
+            Console.WriteLine();
+            Total();
+            Console.ReadLine();
+        }
         #endregion
 
         //#region Recapitulate

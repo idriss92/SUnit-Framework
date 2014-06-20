@@ -8,28 +8,13 @@ namespace Run
 {
     public class RunnerMain
     {
+        [STAThread]
         static void Main(string[] args)
         {
             Console.WriteLine("SUnit for S Library for C# Unit Test");
 
-            var Run = new Test();
-
-            //Load the librairy
-            //Run.LoadAssembly(@"C:\Users\SI\Documents\GitHub\SUnit-Framework\Project\SUnit\SUnit.Samples.dll");
-            
-            //Assembly to load in the string[] args
-            Run.LoadAssembly(args[0]);
-            Run.Store();
-            Console.WriteLine();
-            Run.StoreClassTest();
-
-            Console.WriteLine();
-            Run.TestRunner();
-            Console.WriteLine();
-            Run.Total();
-            Console.WriteLine();
-            //Run.PrintListResult();
-            Console.ReadLine();
+            var run = new Test();
+            run.RunTheCheck(args[0]);
         }
     }
 }
